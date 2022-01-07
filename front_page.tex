@@ -1,0 +1,100 @@
+\pagestyle{empty}
+
+\begin{tikzpicture}[overlay,remember picture]
+
+% Background color
+\fill[
+black!2]
+(current page.south west) rectangle (current page.north east);
+
+% Rectangles
+\shade[
+left color=Dandelion, 
+right color=Dandelion!40,
+transform canvas ={rotate around ={45:($(current page.north west)+(0,-6)$)}}] 
+($(current page.north west)+(0,-6)$) rectangle ++(10,1.5);
+
+\shade[
+left color=lightgray,
+right color=lightgray!50,
+rounded corners=0.75cm,
+transform canvas ={rotate around ={45:($(current page.north west)+(.5,-10)$)}}]
+($(current page.north west)+(0.5,-10)$) rectangle ++(15,1.5);
+
+\shade[
+left color=lightgray,
+rounded corners=0.3cm,
+transform canvas ={rotate around ={45:($(current page.north west)+(.5,-10)$)}}]
+($(current page.north west)+(1.5,-9.55)$) rectangle ++(7,.6);
+
+\shade[
+left color=purple!80,
+right color=blue!60,
+rounded corners=0.4cm,
+transform canvas ={rotate around ={45:($(current page.north)+(-1.5,-3)$)}}]
+($(current page.north)+(-1.5,-3)$) rectangle ++(10,1);
+
+\shade[
+left color=red!80,
+right color=red!80,
+rounded corners=0.9cm,
+transform canvas ={rotate around ={45:($(current page.north)+(-3,-8)$)}}]
+($(current page.north)+(-3,-8)$) rectangle ++(15,1.8);
+
+\shade[
+left color=orange,
+right color=Dandelion,
+rounded corners=0.9cm,
+transform canvas ={rotate around ={45:($(current page.north west)+(4,-15.5)$)}}]
+($(current page.north west)+(4,-15.5)$) rectangle ++(30,2);
+
+\shade[
+left color=RoyalBlue,
+right color=Emerald,
+rounded corners=0.75cm,
+transform canvas ={rotate around ={45:($(current page.north west)+(13,-10)$)}}]
+($(current page.north west)+(13,-10)$) rectangle ++(15,1.5);
+
+\shade[
+left color=lightgray,
+rounded corners=0.3cm,
+transform canvas ={rotate around ={45:($(current page.north west)+(18,-8)$)}}]
+($(current page.north west)+(18,-8)$) rectangle ++(15,0.5);
+
+\shade[
+left color=lightgray,
+rounded corners=0.5cm,
+transform canvas ={rotate around ={45:($(current page.north west)+(19,-5.65)$)}}]
+($(current page.north west)+(19,-5.65)$) rectangle ++(15,1);
+
+\shade[
+left color=OrangeRed,
+right color=red!80,
+rounded corners=0.5cm,
+transform canvas ={rotate around ={45:($(current page.north west)+(20,-9)$)}}] 
+($(current page.north west)+(20,-9)$) rectangle ++(15,1);
+
+% Sostituire con logo Politecnico molesto
+\draw[ultra thick,black!2]
+($(current page.center)+(2,1)$) -- ++(0,0cm) 
+node[
+midway,
+right=-6.75cm,
+text width=9cm,
+align=center]
+{
+{\includegraphics[width=.4\textwidth]{Logo_Politecnico_Milano.png}}
+};
+
+% Title
+\node[align=center] at ($(current page.center)+(0,-5)$) 
+{
+{\fontsize{40}{50} \selectfont {{}}} \\[0.7cm]
+{\fontsize{40}{50} \selectfont {{Ethics of Transportation}}} \\[0.5cm]
+{\fontsize{40}{50} \selectfont {{Workshop portfolio}}} \\[1.5cm]
+{\fontsize{15}{20} \selectfont \textcolor{black}{ \bf \underline{Group 1B}}}\\[10pt]
+{\fontsize{15}{20} \selectfont \textcolor{black}{ \bf Alessandro Barbero (10536528)\quad Luca Cattaneo (10521219)\quad Mara Pegoraro (10629697)}}\\[10pt]
+{\fontsize{15}{20} \selectfont \textcolor{black}{ \bf Jacopo Elia Pometto (10521596)\quad Giovanni Valtorta (10528573)}}\\[15pt]
+{\fontsize{10}{10} \selectfont \textcolor{black}{ \bf {A.Y. 2021 - 2022}}}\\[0pt]
+};
+\end{tikzpicture}

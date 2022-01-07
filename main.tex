@@ -1,0 +1,57 @@
+\documentclass{report}
+\usepackage{arxiv, doi, graphicx, url, verbatim, multirow, colortbl, anyfontsize, hyperref}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{csquotes}
+\usepackage[backend=biber, style=apa]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\begin{document}
+\input{front_page}
+\newpage
+\chapter*{Abstract}
+\pagenumbering{roman}
+\begin{center}
+This is a portfolio made for the course of \textit{Ethics for Transportation}, in the \textbf{Master of Science of Mobility Engineering} at \textit{Politecnico di Milano}.
+
+The aim of this text is the practical analysis of the theoretical and ethical theories applied to the transportation sector. It consists of two parts: the collection of all the \textit{reports} written during the course and the final \textit{individual reflection} made by the authors.
+\end{center}
+
+\tableofcontents
+\pagenumbering{arabic}
+
+\part{Reports}
+\input{Capitoli_Report/2_Report_VSD}
+\newpage
+\input{Capitoli_Report/3_Report_Justice}
+\newpage
+\input{Capitoli_Report/4_Report_Safety}
+\newpage
+\addtocontents{toc}{\vspace{4em}}
+\input{Capitoli_Report/5_Report_Privacy}
+\newpage
+\input{Capitoli_Report/6_Report_Risk}
+\newpage
+\input{Capitoli_Report/7_Report_Responsibility}
+\newpage
+\part{Individual Reflection}
+\input{Individual_reflection/individual_reflection_Ale}
+\input{Individual_reflection/individual_reflection_Luca}
+\input{Individual_reflection/individual_reflection_Mara}
+\input{Individual_reflection/individual_reflection_Jacopo}
+\input{Individual_reflection/individual_reflection_Gio}
+\newpage
+\listoffigures
+\addtocontents{toc}{\vspace{2em}}
+\printbibliography[heading=bibintoc]
+\nocite{*}
+\centering
+\textit{Document write with \LaTeX \:and \href{www.overleaf.com}{Overleaf}. \href{https://www.overleaf.com/docs?snip_uri=https://github.com/tikz-examples/LatexGraphics/raw/master/CoverPage1.tex}{Front pages} founded on \href{https://latexdraw.com/tikz-cover-pages-gallery/}{TikZBlog}}.
+
+\end{document}
